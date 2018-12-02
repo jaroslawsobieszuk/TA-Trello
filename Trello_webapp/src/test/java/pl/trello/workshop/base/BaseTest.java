@@ -13,16 +13,16 @@ public class BaseTest {
 
 	@BeforeClass
 	public static void SetUpClass() {
-		WebDriverManager.chromedriver().setup(); //Konfiguracja sterownika
+		WebDriverManager.chromedriver().setup(); 
 	}
 	@Before
 	public void setUpTest() {
 		driver = new ChromeDriver(); 
-		driver.manage().window().maximize();  // maksymalizacja okna przegl¹darki przed ka¿dym testem
+		driver.manage().window().maximize(); 
 	}
 	@After
 	public void TearDown() {
-		if (driver!= null)     // je¿eli przegl¹darka jest uruchumiona zamykamy j¹ po zakoñczeniu ka¿dego testu
+		if (driver!= null)    
 			driver.quit();
 	} 
 

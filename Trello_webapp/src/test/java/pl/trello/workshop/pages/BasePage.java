@@ -19,7 +19,7 @@ public class BasePage {
 		driver.findElement(location).click();
 		
 	}
-	protected void waitForElementClicable(By location) {  //metoda do oczekiwania a¿ element na stronie zostanie wczytany i mo¿liwy do klikniêcia
+	protected void waitForElementClicable(By location) {  
 		wait = new WebDriverWait(driver,30); 
 		element = wait.until(ExpectedConditions.elementToBeClickable(location));
 	}
